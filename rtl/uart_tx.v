@@ -1,6 +1,6 @@
 `timescale 1ns / 1ps
 //////////////////////////////////////////////////////////////////////////////////
-// Engineer: Md Mudassir Ahmed
+// Author: Md Mudassir Ahmed
 // 
 // Design Name: 	UART Transmitter
 // Module Name:    uart_tx 
@@ -33,7 +33,7 @@ module uart_tx #(parameter DBIT = 8, // Data bits
 	reg [2:0] n_reg, n_next;
 	reg [3:0] s_reg, s_next;
 	reg tx_reg, tx_next;
-  reg tx_done_tick_reg, tx_done_tick_reg_next;
+  	reg tx_done_tick_reg, tx_done_tick_reg_next;
 	
 	//uart_tx fsm cur_state logic
 	always @(posedge clk, negedge reset)
@@ -127,7 +127,7 @@ module uart_tx #(parameter DBIT = 8, // Data bits
 	
   
   // output tx & tx_done_tick Logic
-	assign tx = tx_reg;
+  assign tx = tx_reg;
   assign tx_done_tick = ((reset!=0)&&(cur_state==IDLE))? 1'b1 : tx_done_tick_reg;
 	
 endmodule
