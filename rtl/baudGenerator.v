@@ -18,10 +18,9 @@ module baudGenerator #(  parameter CLK_FREQ  = 25000000,
                         output max_tick
                       );
 
-    parameter DVSR = CLK_FREQ/(16*BAUD_RATE);	// baud rate divisor
-											                        // DVSR = 25MHz/(16*baud_rate)
-                                              //Sampling rate: 16
-  //Declare internal signal for counting
+  parameter DVSR = CLK_FREQ/(16*BAUD_RATE);	// baud rate divisor
+						//Sampling rate: 16
+  						//Declare internal signal for counting
   reg [WIDTH-1:0] count;
 
   //Counter Block
@@ -35,7 +34,7 @@ module baudGenerator #(  parameter CLK_FREQ  = 25000000,
               count <= count + 1;
 		end
 
-  //Max_tick Output Logic
-	assign max_tick = (count == DVSR)? 1'b1 : 1'b0; 
+  // max_tick Output Logic
+  assign max_tick = (count == DVSR)? 1'b1 : 1'b0; 
 	
 endmodule
