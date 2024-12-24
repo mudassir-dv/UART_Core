@@ -10,7 +10,7 @@
 ////////////////////////////////////////////////////////////////////////////////////
 
 module fifo_buf #(parameter 	WIDTH = 8,
-								              DEPTH = 8) 
+				DEPTH = 8) 
                 (input  clk, 
                  input  reset, 
                  input  wr_en, 
@@ -62,8 +62,7 @@ module fifo_buf #(parameter 	WIDTH = 8,
 				end
 		end
 		
-	// Pointer Logic
-	
+	// rd & wr pointer Logic
 	always @(posedge clk, negedge reset)
 		begin
 			if(!reset)
