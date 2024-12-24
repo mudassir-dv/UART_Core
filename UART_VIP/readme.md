@@ -1,12 +1,10 @@
 # UART Verification in UVM
 
  The uart_top is verified under different testcases with a uvm testbench environment. 
- 
- The Testbench Topology is given below :
 
- ------------------------------------------------------------------
- Name                       Type                        Size  Value
- ------------------------------------------------------------------
+------------------------------------------------------------------
+Name                       Type                        Size  Value
+------------------------------------------------------------------
  uvm_test_top               tx_write_rx_read_test       -     @479 
    envh                     uart_tb                     -     @495 
      rx_agth                rx_agent                    -     @514 
