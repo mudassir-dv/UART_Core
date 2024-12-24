@@ -1,6 +1,6 @@
 `timescale 1ns / 1ps
 //////////////////////////////////////////////////////////////////////////////////
-// Engineer: Md Mudassir Ahmed
+// Author: Md Mudassir Ahmed
 // Design Name: UART Receiver Subsystem
 // Module Name:  uart_rcvr 
 // Project Name: UART IP Core
