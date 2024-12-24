@@ -22,7 +22,7 @@ module fifo_buf #(parameter 	WIDTH = 8,
                  output [WIDTH-1:0] r_data);
 
   
-  reg [WIDTH-1:0] r_data;
+  	reg [WIDTH-1:0] r_data;
   
 	// Declare Memory
 	reg [WIDTH-1:0] mem [DEPTH-1:0]; 
