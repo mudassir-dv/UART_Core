@@ -1,7 +1,6 @@
 `timescale 1ns / 1ps
 ////////////////////////////////////////////////////////////////////////////////////
-// Company: 
-// Engineer: Md Mudassir Ahmed
+// Author: Md Mudassir Ahmed
 // 
 // Design Name: FIFO Buffer
 // Module Name:    fifo_buf 
